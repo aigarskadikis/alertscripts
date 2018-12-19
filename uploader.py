@@ -26,6 +26,8 @@ from googleapiclient.http import MediaFileUpload
 
 import ConfigParser
 
+from os.path import expanduser
+
 class MotionUploader:
     def __init__(self, config_file_path):
         # Load config
@@ -33,7 +35,8 @@ class MotionUploader:
         config.read(config_file_path)
         
         # OAuth folder
-        self.oauth_folder = config.get('oauth', 'folder')
+        # self.oauth_folder = config.get('oauth', 'folder')
+        self.oauth_folder = expanduser("~")+'/'
         
         # GMail account credentials
         self.username = config.get('gmail', 'user')
