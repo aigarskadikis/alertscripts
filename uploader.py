@@ -1,14 +1,8 @@
 #!/usr/bin/python
 '''
-Created on 6 Jun 2012
-
-@author: Jeremy Blythe
-
-Motion Uploader - uploads videos to Google Drive
-
-Read the blog entry at http://jeremyblythe.blogspot.com for more information
-
-Version 2: 10 Jun 2015 - rewritten for Google oauth2 and apiclient
+to work with this method i need to install:
+pip install --upgrade google-api-python-client
+pip install --upgrade oauth2client
 '''
 import sys
 
